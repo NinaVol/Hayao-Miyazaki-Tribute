@@ -1,0 +1,92 @@
+# React Project: Hayao Miyazaki Tribute
+
+## Description
+
+This is a single-page application (SPA) dedicated to the life and works of Hayao Miyazaki, the legendary Japanese animator and director. The project showcases his biography, filmography, and includes a feature to search for movies and view external links for watching them.
+
+---
+
+## Features
+
+### General:
+
+- **Responsive Design:** Adapts seamlessly to different screen sizes.
+- **Smooth Animations:** Powered by `AOS` (Animate On Scroll) for dynamic user experience.
+- **Loading Indicator:** A visually appealing loading spinner (using `react-spinners`) shown during initial page load.
+- **API Integration:** Uses OMDb API for fetching movie data.
+
+### Sections:
+
+1. **Home Page:** Introduction to the application.
+2. **Biography:** Detailed timeline of Hayao Miyazaki's life and career.
+3. **Films:** Display of his notable films with posters and descriptions.
+4. **Watch:** Search functionality powered by an API to find movies and redirect users to external links for watching.
+
+---
+
+## Technologies Used
+
+- **React**: For building the user interface.
+- **React Router**: For SPA routing.
+- **AOS**: For scroll animations.
+- **React Spinners**: For the loading indicator.
+- **OMDb API**: For fetching and displaying movie data.
+- **CSS**: Custom styling for a clean and elegant appearance.
+
+---
+
+## Installation
+
+### Prerequisites:
+
+- Node.js installed on your system.
+- A text editor (e.g., VS Code).
+
+### Steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/hayao-miyazaki-tribute.git
+
+2. Navigate to the project directory:   
+
+  cd hayao-miyazaki-tribute
+
+3. Install dependencies:
+   
+   npm install
+
+4. Start the development server:
+
+   npm start 
+
+5. Open the application in your browser at http://localhost:3000.
+
+
+## Screenshots
+
+### Home Page:
+![Home Page Screenshot](./screenshots/HomePage.png)
+
+### Biography Page:
+![Biography Page Screenshot](./screenshots/Biography.png)
+
+### Films Page:
+![Films Page Screenshot](./screenshots/Films.png)
+
+### Watch Page:
+![Watch Page Screenshot](./screenshots/Watch.png)
+
+## License
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+- Hayao Miyazaki for his inspiring works.
+
+- OMDb API for movie data integration.
+
+- React Community for excellent tools and documentation.
+
+## Enjoy exploring the legacy of Hayao Miyazaki!
