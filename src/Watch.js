@@ -1,16 +1,19 @@
-import Movies from './moviesPosters/Movies-Watch.jpg';
+import Movies from './assets/moviesPosters/Movies-Watch.jpg';
 import { useState } from 'react';
 import { fetchMovie } from "./api";
 import Swal from "sweetalert2";
 import movieLinks from "./movieLinks.json";
+import { ClipLoader } from 'react-spinners';
 
 function Watch() {
     const [query, setQuery] = useState("");
     const [movie, setMovie] = useState(null);
+    const [loading, setLoading] = useState(false)
 
     const handleSearch = async (e) => {
         e.preventDefault();
         setMovie(null);
+        setLoading(true);
 
         if (!query.trim()) {
             Swal.fire({
@@ -21,10 +24,13 @@ function Watch() {
                     title: "swal-title"
                 }
             });
+            setLoading(false);
             return;
         }
 
         const data = await fetchMovie(query);
+
+        setLoading(false);
 
         if (data && data.Response === "True") {
             const link = movieLinks.find((link) => link.id === data.imdbID);
@@ -35,7 +41,7 @@ function Watch() {
                 title: "Movie not found",
                 text: "Try another title!",
                 customClass: {
-                    title: "swal-title"
+                title: "swal-title"
                 }
             });
         }
@@ -55,7 +61,15 @@ function Watch() {
                     <button type="submit" className='btn-search'>Search</button>
                 </form>
 
-                {movie && (
+               {loading && (
+                <div className='api-container'>
+                    <ClipLoader color={'#EDFF24'} size={80}/>
+                </div>
+               )}
+
+               
+
+                {movie && !loading && (
                     <div className='api-container'>
                         <h2>{movie.Title}</h2>
                         <img src={movie.Poster} alt={movie.Title} />

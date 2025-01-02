@@ -1,9 +1,9 @@
-import Spirited from './images/Spirited-slide.jpg'
-import Castle from './images/howlscastle-slide.jpg'
-import Mononoke from './images/Mononoke-Slider.jpg'
-import Totoro from './images/Totoro-slide.jpg'
-import Ponyo from './images/ponyo-slide.jpeg'
-import Boy from './images/boy-and-the-heron-slide.jpg'
+import Spirited from './assets/images/Spirited-slide.jpg'
+import Castle from './assets/images/howlscastle-slide.jpg'
+import Mononoke from './assets/images/Mononoke-Slider.jpg'
+import Totoro from './assets/images/Totoro-slide.jpg'
+import Ponyo from './assets/images/ponyo-slide.jpeg'
+import Boy from './assets/images/boy-and-the-heron-slide.jpg'
 export const data = [
     {
         id: 1,

@@ -67,16 +67,16 @@ This is a single-page application (SPA) dedicated to the life and works of Hayao
 ## Screenshots
 
 ### Home Page:
-![Home Page Screenshot](./screenshots/HomePage.png)
+![Home Page Screenshot](./assets/screenshots/HomePage.png)
 
 ### Biography Page:
-![Biography Page Screenshot](./screenshots/Biography.png)
+![Biography Page Screenshot](./assets/screenshots/Biography.png)
 
 ### Films Page:
-![Films Page Screenshot](./screenshots/Films.png)
+![Films Page Screenshot](./assets/screenshots/Films.png)
 
 ### Watch Page:
-![Watch Page Screenshot](./screenshots/Watch.png)
+![Watch Page Screenshot](./assets/screenshots/Watch.png)
 
 ## License
 This project is licensed under the MIT License.

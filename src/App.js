@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'; 
-import ClipLoader from "react-spinners/ClipLoader";
 import './App.css';
 import HomePage from './HomePage';
 import Footer from "./Footer";
@@ -17,25 +16,16 @@ import Films from './Films';
 
 function App() {
 
-  const [stateLoader, setStateLoader] = useState(true); 
-
   useEffect(() => {
     AOS.init({
       duration: 1000, 
       offset: 100, 
     });
-
-    const timer = setTimeout(() => setStateLoader(false), 2000); 
-    return () => clearTimeout(timer); 
   }, []);
 
   return (
     <div>
-      {stateLoader ? (
-        <div className="loader-container">
-          <ClipLoader color={'#EDFF24'} size={90} />
-        </div>
-      ) : (
+      
         <Router>
           <nav>
             <Link to='/home' className='link'>Home</Link>
@@ -51,7 +41,7 @@ function App() {
             <Route path='/watch' element={<Watch />} />
           </Routes>
         </Router>
-      )}
+    
       <Footer />
     </div>
   );

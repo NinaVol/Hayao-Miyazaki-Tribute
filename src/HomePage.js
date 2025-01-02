@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Miyazaki from './images/HayaoMiyazaki.jpg';
+import Miyazaki from './assets/images/HayaoMiyazaki.jpg';
 import { data } from './data';
 
 function HomePage() {
