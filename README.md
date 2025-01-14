@@ -80,19 +80,19 @@ Additionally, this project integrates an online store feature built using Redux,
 ## Screenshots
 
 ### Home Page:
-![Home Page Screenshot](./assets/screenshots/HomePage.png)
+![Home Page Screenshot](./src/assets/screenshots/HomePage.png)
 
 ### Biography Page:
-![Biography Page Screenshot](./assets/screenshots/Biography.png)
+![Biography Page Screenshot](./src/assets/screenshots/Biography.png)
 
 ### Films Page:
-![Films Page Screenshot](./assets/screenshots/Films.png)
+![Films Page Screenshot](./src/assets/screenshots/Films.png)
 
 ### Watch Page:
-![Watch Page Screenshot](./assets/screenshots/Watch.png)
+![Watch Page Screenshot](./src/assets/screenshots/Watch.png)
 
 ### Merch Page:
-![Watch Page Screenshot](./assets/screenshots/Merch.png)
+![Watch Page Screenshot](./src/assets/screenshots/Merch.png)
 
 ## License
 This project is licensed under the MIT License.
