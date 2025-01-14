@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import Biography from './Biography';
 import Films from './Films';
+import Merch from './Merch';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
             <Link to='/biography' className='link'>Biography</Link>
             <Link to='/Films' className='link'>Films</Link>
             <Link to='/Watch' className='link'>Watch</Link>
+            <Link to='/Merch' className='link'>Merch</Link>
           </nav>
 
           <Routes>
@@ -39,6 +41,7 @@ function App() {
             <Route path='/biography' element={<Biography />} />
             <Route path='/films' element={<Films />} />
             <Route path='/watch' element={<Watch />} />
+            <Route path='/merch' element={<Merch/>} />
           </Routes>
         </Router>
     
