@@ -37,6 +37,7 @@ function App() {
           </nav>
 
           <Routes>
+            <Route path='/' element={<HomePage />} />
             <Route path='/home' element={<HomePage />} />
             <Route path='/biography' element={<Biography />} />
             <Route path='/films' element={<Films />} />
